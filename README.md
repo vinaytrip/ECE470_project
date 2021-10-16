@@ -1,1 +1,5 @@
 # ECE470_project
+In this project, we will be creating a program that acts as a pool simulator. A robot arm will grab blocks from a given position and randomly drop them around the area in reach of the robot arm. A camera will watch over the area and relay information to the robot so that the robot knows where the blocks are positioned. Using these final positioned blocks, the robot will choose one block to hold with the suction from the gripper. Using the block it will collide with the other blocks in a certain way to make sure that the block is pushed to one side of the robot arm. It is more akin to raking leaves into a pile rather than pool ball.
+
+Project Update 1:
+During this update we were able to use the existing lab 2 code from Towers of Hanoi in order to spawn blocks properly in set positions. We then used the robot to pick and drop the blocks randomly across the board. In the next update we will be adding the camera sensor in order to make the robot find the blocks properly using forward kinematics.
