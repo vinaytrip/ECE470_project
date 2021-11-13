@@ -3,3 +3,6 @@ In this project, we will be creating a program that acts as a pool simulator. A 
 
 Project Update 1:
 During this update we were able to use the existing lab 2 code from Towers of Hanoi in order to spawn blocks properly in set positions. We then used the robot to pick and drop the blocks randomly across the board. We were able to show that the robot is moving properly and working with sensors based on our code in the youtube video and we output to the screen if the gripper has the proper values after each suction. In the next update we will be adding the camera sensor in order to make the robot find the blocks properly using forward kinematics.
+
+Project Update 2:
+During this update we tried to incorporate online Lab 5's files and image detection to our project. We were able to correctly implement our forward/inverse kinematics as shown in the video. The video contains the demo that shows the final theta values. While we were unable to make the final position work properly in Gazebo due to the fact that our starting positions for the blocks were not being published properly. We will be working on this for the final update to make sure that we are properly able to move the block and be able to play "pool".
