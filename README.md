@@ -6,3 +6,6 @@ During this update we were able to use the existing lab 2 code from Towers of Ha
 
 Project Update 2:
 During this update we tried to incorporate online Lab 5's files and image detection to our project. We were able to correctly implement our forward/inverse kinematics as shown in the video. The video contains the demo that shows the final theta values. While we were unable to make the final position work properly in Gazebo due to the fact that our starting positions for the blocks were not being published properly. We will be working on this for the final update to make sure that we are properly able to move the block and be able to play "pool".
+
+Project Update 3:
+During this update we tried to edit the Lab 5 exececution file in order to allow the block to be placed right next to the block that was to be pushed to the endzone. We were able to place it properly and are trying to make this work in a simulation. We tried adding a swing function. The swing function was not as easy as expected since the arm moves similar to a moveJ and stops at the end point. So for the final update we will be adding this to the simulation along with finishing the swing function.
