@@ -316,9 +316,25 @@ if __name__ == '__main__':
 
     # lab 2 move_block()
     # global g_xw, g_yw
-    start_xw_yw_zw = np.array([g_xw, g_yw])
-    target_xw_yw_zw = np.array([0.23, -0.15, 0.04])
-    move_block(pub_command, loop_rate, start_xw_yw_zw, target_xw_yw_zw, vel, accel)
+    target_xw_yw_zw_b = [0.23, -0.15, 0.04]
+    target_xw_yw_zw_g = [0.13, -0.15, 0.04]
+
+    while(len(xw_yw_Y) < 2 or len(xw_yw_G) < 2):
+        loop_rate.sleep()
+
+    blue1, blue2 = xw_yw_G[0], xw_yw_G[1]
+    green1, green2 = xw_yw_Y[0], xw_yw_Y[1]
+    green1[1] = green1[1] - 0.04
+    next_green = np.array([green1[0], green1[1]])
+    # next_green.append(green1[1])
+    green1.append(0.057)
+    green2[1] = green2[1] - 0.04
+    green2.append(0.057)
+    print(green1)
+    move_block(pub_command, loop_rate, blue1, green1, vel, accel)
+    # move_block(pub_command, loop_rate, blue2, target_xw_yw_zw_b, vel, accel)
+
+    move_block(pub_command, loop_rate, next_green, green2, vel, accel)
 
     ############## Your Code End Here ###############
 
